@@ -4,13 +4,40 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "components": [],
+          "name": "homeModel",
+          "dataProvider": "defaultProvider",
+          "collection": "Activities",
+          "headerField": "Text",
+          "subHeaderField": "UserId",
+          "detailImageField": "Picture",
+          "addItemForm": false,
+          "editItemForm": false,
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "deleteItemButton": false
+        }
+      ],
       "title": "Home View",
       "addToNavigation": true,
       "icon": "home"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "defaultProvider",
+      "title": "RelationsViews / RelationsViews",
+      "source": "everlive",
+      "everliveKey": "lvgp9awf4lf0g34d",
+      "offlineStorage": false
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",
